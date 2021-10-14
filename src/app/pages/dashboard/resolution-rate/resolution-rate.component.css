@@ -1,0 +1,57 @@
+.resolution-block-header{
+    padding: 8px 10px;
+    font-size: 12px;
+    color:#fff;
+    background: #1e1e1e;
+}
+.resolution-block-content{
+    background: #232323;
+    padding: 40px 20px;
+    font-size: 12px;
+    min-height: 380px!important;
+    display: flex;
+    justify-content: space-between;
+}
+.resolution-block-footer{
+    background: #1e1e1e;
+    color:#fff;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+.info-icon{
+    width: 16px;
+    vertical-align: middle;
+    margin-left: auto;
+    float: right;
+}
+.footer-icon{
+    width: 16px;
+    vertical-align: middle;
+    margin-left: auto;
+    float: right;
+}
+
+.graph-bar{
+    width: calc(20% - 10px);
+    border: 1px solid black;
+    box-shadow: 0px 1px 6px #000000;
+    border-radius: 6px 6px 0px 0px;
+    text-align: center;
+   
+}
+.graph-grad1{
+      background-image: linear-gradient(yellow 50%,green 35%,blue 15%);
+     
+}
+.graph-grad2{
+    background-image:linear-gradient(black 47%,#c9596e 28%, #df8f01 25%);
+}
+.graph-grad3{
+    background-image:linear-gradient(black 40%,#c9596e 10%, #df8f01 50%);
+}
+.graph-grad4{
+    background-image:linear-gradient(black 40%,#c9596e 10%, #df8f01 50%);
+}
+.graph-grad5{
+    background-image:linear-gradient(black 40%,#c9596e 10%, #df8f01 50%);
+}
