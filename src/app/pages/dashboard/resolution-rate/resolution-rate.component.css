@@ -44,32 +44,48 @@
 
 }
 .inner-box-bg1{
-    background: repeating-linear-gradient( to top, #232323 0.5px, #c2449a 2px, #df8f01 16px );
-  
-    min-height: 76px!important;
+    background-image: linear-gradient(180deg, #c2449a, #df8f01);
 
- 
+}
+.inner-box-bg1-line{
+    background: repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
+     min-height: 76px!important;
 }
 .inner-box-bg2{
-    background: repeating-linear-gradient(to top, #232323 0.5px, #c2449a 2px, #df8f01 16px );
-    min-height: 97px!important;
+   
+    background-image: linear-gradient(180deg, #c2449a, #df8f01);
  
+}
+.inner-box-bg2-line{
+    background:repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
+    min-height: 97px!important;
 }
 .inner-box-bg3{
-    background: repeating-linear-gradient(to top, #232323 0.5px, #c2449a 2px, #df8f01 16px );
+   
+    background-image: linear-gradient(180deg, #c2449a, #df8f01);
+}
+.inner-box-bg3-line{
+    background:repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
     min-height: 48px!important;
- 
 }
 .inner-box-bg4{
-    background: repeating-linear-gradient(to top, #232323 0.5px, #c2449a 2px, #df8f01 16px );
-    min-height: 94px!important;
  
-}   
+    background-image: linear-gradient(180deg, #c2449a, #df8f01);
+ 
+}  
+.inner-box-bg4-line{
+    background: repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
+    min-height: 94px!important;
+} 
 .inner-box-bg5{
-    background: repeating-linear-gradient( #232323 0.5px, #c2449a 2px, #df8f01 16px );
-    min-height: 30px!important;
+    background-image: linear-gradient(180deg, #c2449a, #df8f01);
+   
  
 }
+.inner-box-bg5-line{
+    background: repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
+    min-height: 30px!important;
+} 
 .inner-box-text{
     color:#fff;
     font-size: 13px;
