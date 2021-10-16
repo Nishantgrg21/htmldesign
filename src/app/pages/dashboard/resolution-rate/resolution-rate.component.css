@@ -4,14 +4,7 @@
     color:#fff;
     background: #1e1e1e;
 }
-.resolution-block-content{
-    background: #232323;
-    padding: 40px 20px;
-    font-size: 12px;
-    min-height: 380px!important;
-    display: flex;
-    justify-content: space-between;
-}
+
 .resolution-block-footer{
     background: #1e1e1e;
     color:#fff;
@@ -30,28 +23,67 @@
     margin-left: auto;
     float: right;
 }
-
-.graph-bar{
+.resolution-block-content{
+    background: #232323;
+    padding: 40px 20px;
+    font-size: 12px;
+    /* min-height: 298px!important; */
+    display: flex;
+    justify-content: space-between;
+}
+.inner-box{
     width: calc(20% - 10px);
-    border: 1px solid black;
-    box-shadow: 0px 1px 6px #000000;
+    /* border: 1px solid black;
+    box-shadow: 0px 1px 6px #000000; */
     border-radius: 6px 6px 0px 0px;
     text-align: center;
-   
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 300px;
+
 }
-.graph-grad1{
-      background-image: linear-gradient(yellow 50%,green 35%,blue 15%);
-     
+.inner-box-bg1{
+    background: repeating-linear-gradient( to top, #232323 0.5px, #c2449a 2px, #df8f01 16px );
+  
+    min-height: 76px!important;
+
+ 
 }
-.graph-grad2{
-    background-image:linear-gradient(black 47%,#c9596e 28%, #df8f01 25%);
+.inner-box-bg2{
+    background: repeating-linear-gradient(to top, #232323 0.5px, #c2449a 2px, #df8f01 16px );
+    min-height: 97px!important;
+ 
 }
-.graph-grad3{
-    background-image:linear-gradient(black 40%,#c9596e 10%, #df8f01 50%);
+.inner-box-bg3{
+    background: repeating-linear-gradient(to top, #232323 0.5px, #c2449a 2px, #df8f01 16px );
+    min-height: 48px!important;
+ 
 }
-.graph-grad4{
-    background-image:linear-gradient(black 40%,#c9596e 10%, #df8f01 50%);
+.inner-box-bg4{
+    background: repeating-linear-gradient(to top, #232323 0.5px, #c2449a 2px, #df8f01 16px );
+    min-height: 94px!important;
+ 
+}   
+.inner-box-bg5{
+    background: repeating-linear-gradient( #232323 0.5px, #c2449a 2px, #df8f01 16px );
+    min-height: 30px!important;
+ 
 }
-.graph-grad5{
-    background-image:linear-gradient(black 40%,#c9596e 10%, #df8f01 50%);
+.inner-box-text{
+    color:#fff;
+    font-size: 13px;
+    padding: 5px;
+}
+.inner-box-txt{
+    padding: 2px;
+    color: #fff;
+    background: #232323;
+}
+.border-sdw{
+    border: 1px solid black;
+    box-shadow: 0px 1px 6px #000000;
+    display: flex;
+    height: 300px;
+    flex-direction: column-reverse;
 }

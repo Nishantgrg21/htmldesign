@@ -1,4 +1,8 @@
-
+.h-5{
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
  .block{
     display: flex;
     align-items: center;
@@ -30,53 +34,57 @@
     font-size: 16px;
 }
 .account{
-    font-size:30px ;
+    font-size:38px ;
     cursor: pointer;
-    color: #fff;
+    color: #df8f01;
 }
+
+/* .account:hover {
+  font-size: 38px;
+  cursor: pointer;
+  color:#cf9123;
+} */
+
 .rupees{
-  width: 30px;
+ width: 40px;
   text-align: center;
   border: 1px solid;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 28px;
   color: #fff;
   background: #292929;
   cursor: pointer;
+  
 }
-.account:hover {
+ /* #acc-size{
+  color:#cf9123;
+  font-size: 30px;
+
+} */
+/*
+#rup-size{
+  color: #000000;
+    background: #cf9123;
     font-size: 30px;
-    cursor: pointer;
-    color:#cf9123;
-}
+    width: 44px;
+} */
+
+
+
 
 .rupees:hover{
-    width: 30px;
+    width: 40px;
     text-align: center;
     border: 1px solid;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 28px;
     color: #000;
     background:  #cf9123;
     cursor: pointer;
-}
-.account:active {
-  font-size: 36px;
-  cursor: pointer;
-  color:#cf9123;
-  display: block;
-}
+} 
 
-.rupees:active{
-    width: 36px;
-    text-align: center;
-    border: 1px solid;
-    border-radius: 50%;
-    font-size: 24px;
-    color: #000;
-    background: #cf9123;
-    cursor: pointer;
-}
+
+
 #div2{
   display: none;
 }
@@ -92,6 +100,8 @@
     cursor: pointer;
     margin-right: 10px;
     display: flex;
+    width: 150px;
+
 }
 .dropdown-text{
     font-size: 16px;
@@ -118,9 +128,11 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-left: -15px;
+    margin-top: 128px;
   }
   
   .dropdown-content a {
