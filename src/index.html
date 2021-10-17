@@ -42,16 +42,18 @@ function show1(){
   document.getElementById('div1').style.display="flex";
   document.getElementById('div2').style.display="none";
   document.getElementById('content-change').innerHTML = 'My Account';
-  $('#acc-size').addClass('account');
-  $('#rup-size').removeClass('rupees');
+  $('#acc-size').addClass('active-btn');
+  $('#acc-size').removeClass(' acc-bg-rm');
+  $('#rup-size').removeClass('active-btn rup-change ');
 }
 
 function show2(){
   document.getElementById('div2').style.display="flex";
   document.getElementById('div1').style.display="none";
   document.getElementById('content-change').innerHTML = 'My Amount';
-  $('#rup-size').addClass('rupees');
-  $('#acc-size').removeClass('account');
+  $('#rup-size').addClass('active-btn rup-change');
+  $('#acc-size').removeClass('active-btn ');
+  $('#acc-size').addClass('acc-bg-rm ');
 }
 
 </script>
