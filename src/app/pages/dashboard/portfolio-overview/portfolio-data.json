@@ -1,0 +1,27 @@
+[
+    {
+        "image":"/assets/images/totalAccounts.png",
+        "amount":"9.84 Lac",
+        "percent":""
+    },
+    {
+        "image":"/assets/images/totalEngagement.png",
+        "amount":"7.14 Lac",
+        "percent":"72.50 %"
+    },
+    {
+        "image":"/assets/images/totalRegistered.png",
+        "amount":"3.37 Lac",
+        "percent":"47.17 %"
+    },
+    {
+        "image":"/assets/images/digitallyPaid.png",
+        "amount":"74.99 Lac",
+        "percent":"22.27 %"
+    },
+    {
+        "image":"/assets/images/overallResolved.png",
+        "amount":"4.35 Lac ",
+        "percent":"44.21 %"
+    }
+]

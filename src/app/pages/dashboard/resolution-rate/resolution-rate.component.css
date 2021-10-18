@@ -37,55 +37,24 @@
     box-shadow: 0px 1px 6px #000000; */
     border-radius: 6px 6px 0px 0px;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle;
     display: flex;
-    flex-direction: column-reverse;
-    height: 300px;
+    flex-direction: column-reverse; */
+    /* height: 300px; */
 
 }
 .inner-box-bg1{
     background-image: linear-gradient(180deg, #c2449a, #df8f01);
+    display: flex;
+    flex-direction: column-reverse;
 
 }
 .inner-box-bg1-line{
-    background: repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
-     min-height: 76px!important;
+    background: repeating-linear-gradient(to top, #000000 1px, #00000000 3px, #00000000 31px );
+    margin-bottom: -1px;
+     
 }
-.inner-box-bg2{
-   
-    background-image: linear-gradient(180deg, #c2449a, #df8f01);
- 
-}
-.inner-box-bg2-line{
-    background:repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
-    min-height: 97px!important;
-}
-.inner-box-bg3{
-   
-    background-image: linear-gradient(180deg, #c2449a, #df8f01);
-}
-.inner-box-bg3-line{
-    background:repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
-    min-height: 48px!important;
-}
-.inner-box-bg4{
- 
-    background-image: linear-gradient(180deg, #c2449a, #df8f01);
- 
-}  
-.inner-box-bg4-line{
-    background: repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
-    min-height: 94px!important;
-} 
-.inner-box-bg5{
-    background-image: linear-gradient(180deg, #c2449a, #df8f01);
-   
- 
-}
-.inner-box-bg5-line{
-    background: repeating-linear-gradient(to top, #000000 0.5px, #00000000 3px, #00000000 16px );
-    min-height: 30px!important;
-} 
+
 .inner-box-text{
     color:#fff;
     font-size: 13px;
@@ -97,8 +66,10 @@
     background: #232323;
 }
 .border-sdw{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-shadow: 0px 1px 6px #000000;
+    background: #303030;
+    border-radius: 5px;
     display: flex;
     height: 300px;
     flex-direction: column-reverse;

@@ -51,10 +51,10 @@
 
 <!--5 Column Content Start-->
 <div class="block" id="div1" >
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
+    <div class="dashboard-block b-bdr"  *ngFor=" let Pdata of PortfolioData1">
+        <div class="dashboard-box" >
             <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
+                <img src={{Pdata.image}} class="img-width">
             </div>
             <div class="dashboard-text">
                 <div class="dashboard-text-1">
@@ -63,102 +63,23 @@
                         <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
                     </span>
                 </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">9.84 Lac</span>
-                    <span  class="dashboard-text-2-percent"></span>
+                <div class="dashboard-text-2" >
+                    <span class="dashboard-text-2-rate">{{Pdata.amount}}</span>
+                    <span  class="dashboard-text-2-percent">{{Pdata.percent}}</span>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
-            <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
-            </div>
-            <div class="dashboard-text">
-                <div class="dashboard-text-1">
-                    <span>Total Engagement</span>
-                    <span>
-                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
-                    </span>
-                </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">7.14 Lac</span>
-                    <span  class="dashboard-text-2-percent"> 72.50 %</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
-            <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
-            </div>
-            <div class="dashboard-text">
-                <div class="dashboard-text-1">
-                    <span>Total Accounts</span>
-                    <span>
-                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
-                    </span>
-                </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">3.37 Lac</span>
-                    <span  class="dashboard-text-2-percent"> 47.17 %</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
-            <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
-            </div>
-            <div class="dashboard-text">
-                <div class="dashboard-text-1">
-                    <span>Total Accounts</span>
-                    <span>
-                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
-                    </span>
-                </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">74.99 Lac</span>
-                    <span  class="dashboard-text-2-percent">22.27 %</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
-            <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
-            </div>
-            <div class="dashboard-text">
-                <div class="dashboard-text-1">
-                    <span>Total Accounts</span>
-                    <span>
-                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
-                    </span>
-                </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">4.35 Lac</span>
-                    <span  class="dashboard-text-2-percent"> 44.21 %</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
+ 
 </div>
 <!--5 Column Content End-->
 <!--5 Column Content Start-->
 <div class="block" id="div2">
-    <div class="dashboard-block b-bdr">
+    <div class="dashboard-block b-bdr" *ngFor=" let PNewdata of PortfolioData2">
         <div class="dashboard-box">
             <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
+                <img  src={{PNewdata.image}} class="img-width">
             </div>
             <div class="dashboard-text">
                 <div class="dashboard-text-1">
@@ -168,92 +89,13 @@
                     </span>
                 </div>
                 <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">4,178.60 Cr</span>
-                    <span  class="dashboard-text-2-percent"></span>
+                    <span class="dashboard-text-2-rate">{{PNewdata.amount}} </span>
+                    <span  class="dashboard-text-2-percent">{{PNewdata.percent}} </span>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
-            <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
-            </div>
-            <div class="dashboard-text">
-                <div class="dashboard-text-1">
-                    <span>Total Engagement</span>
-                    <span>
-                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
-                    </span>
-                </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">3,070.47 Cr</span>
-                    <span  class="dashboard-text-2-percent"> 73.48 %</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
-            <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
-            </div>
-            <div class="dashboard-text">
-                <div class="dashboard-text-1">
-                    <span>Total Accounts</span>
-                    <span>
-                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
-                    </span>
-                </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">1,551.80 Cr</span>
-                    <span  class="dashboard-text-2-percent"> 50.54 %</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
-            <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
-            </div>
-            <div class="dashboard-text">
-                <div class="dashboard-text-1">
-                    <span>Total Accounts</span>
-                    <span>
-                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
-                    </span>
-                </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">297.92 Cr</span>
-                    <span  class="dashboard-text-2-percent">19.20 %</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="dashboard-block b-bdr">
-        <div class="dashboard-box">
-            <div class="dashboard-icon">
-                <img  src="assets\images\totalAccounts.png" class="img-width">
-            </div>
-            <div class="dashboard-text">
-                <div class="dashboard-text-1">
-                    <span>Total Accounts</span>
-                    <span>
-                        <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
-                    </span>
-                </div>
-                <div class="dashboard-text-2">
-                    <span class="dashboard-text-2-rate">1,591.31 Cr</span>
-                    <span  class="dashboard-text-2-percent"> 38.08 %</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
+  
 </div>
 <!--5 Column Content End-->
