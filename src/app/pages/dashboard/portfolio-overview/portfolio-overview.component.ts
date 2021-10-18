@@ -9,12 +9,22 @@ import portfolioNewData from '../portfolio-overview/portfolio-newdata.json';
 })
 export class PortfolioOverviewComponent implements OnInit {
 
-  public PortfolioData1:{image:string,amount:string, percent:string}[] = portfolioData;
-  public PortfolioData2:{image:string,amount:string, percent:string}[] = portfolioNewData;
+  public PortfolioData1:{image:string,title:string,amount:string, percent:string}[] = portfolioData;
+  public PortfolioData2:{image:string,title:string,amount:string, percent:string}[] = portfolioNewData;
+
+   dropdownList=[
+     "Bucket 1", "Bucket 2" ,"Bucket3"
+   ]
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  // drpDownBtnValues:string='';
+  // dropdwnChange (event: any){
+  //    this.drpDownBtnValues= event.target.valuesss;
+
+  // }
 
   
 

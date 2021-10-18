@@ -44,7 +44,9 @@ function show1(){
   document.getElementById('content-change').innerHTML = 'My Account';
   $('#acc-size').addClass('active-btn');
   $('#acc-size').removeClass(' acc-bg-rm');
-  $('#rup-size').removeClass('active-btn rup-change ');
+  $('#rup-size').removeClass('active-btn rup-change');
+  document.getElementById('div3').style.display="block";
+  document.getElementById('div4').style.display="block";
 }
 
 function show2(){
@@ -57,10 +59,33 @@ function show2(){
 }
 
 </script>
-
 <script>
+$(document).ready(function(){
+  $('#name').on('change',function(){
+    // alert($(this).val());
+    var DropData = $(this).val();
+    document.getElementById('drpBtnChange').innerHTML = DropData;
+     $('.details').hide();
+     $('.' + DropData ).show();
+    
+    //  $('#div2').show();
+      // 
+    
+  })
+});
 
+
+// $(document).ready(function(){
+//   $('#valuechange').on('change',function(){
+//     var DropData2 = $(this).val();
+//     document.getElementById('drpBtn2Change').innerHTML = DropData2;
+//      $('#div1').hide();
+  
+  
+//   })
+// });
 </script>
+  
 
 
 

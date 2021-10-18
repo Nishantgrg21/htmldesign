@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./settlement-offer.component.css']
 })
 export class SettlementOfferComponent implements OnInit {
+ 
+  OffersData=[{
+    "image":"",
+    "value": "",
+    "Text":"",
+  }]
 
   constructor() { }
 

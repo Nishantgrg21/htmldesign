@@ -5,7 +5,7 @@
             <img src="assets/images/info-d.png" alt="icon" class="info-icon">
         </span>
     </div>
-    <div class="resolution-block-content">
+    <div class="resolution-block-content" id = "div1">
         <div class="inner-box"  *ngFor="let resData of ResolutionData" >
            
             <div class="border-sdw">
@@ -23,6 +23,24 @@
             </div>
         </div>
     </div>
+    <!-- <div class="resolution-block-content" id = "div2">
+        <div class="inner-box"  *ngFor="let resNewData of ResolutionNewData" >
+           
+            <div class="border-sdw">
+               
+                <div class="inner-box-bg1"  [ngStyle]="{ 'height.%':resNewData.value }">
+                      <div class="inner-box-bg1-line"  [ngStyle]="{ 'height.%':100 }"></div>
+                </div>
+                <div class="inner-box-text">
+                    {{resNewData.value}} %
+                </div>
+                
+            </div>
+            <div class="inner-box-txt">
+                {{resNewData.state}}
+            </div>
+        </div>
+    </div> -->
     <div class="resolution-block-footer">
         Download Reports
         <span>
