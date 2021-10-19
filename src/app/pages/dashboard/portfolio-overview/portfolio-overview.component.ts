@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import portfolioData from '../portfolio-overview/portfolio-data.json';
 import portfolioNewData from '../portfolio-overview/portfolio-newdata.json';
+import { Dropdown } from '../portfolio-overview/dropdownList';
+import { DROPDOWNLIST } from '../portfolio-overview/dropdownListValues';
 
 @Component({
   selector: 'app-portfolio-overview',
@@ -8,17 +10,21 @@ import portfolioNewData from '../portfolio-overview/portfolio-newdata.json';
   styleUrls: ['./portfolio-overview.component.css']
 })
 export class PortfolioOverviewComponent implements OnInit {
-  [x: string]: any;
+
 
   public PortfolioData1:{image:string,title:string,amount:string, percent:string}[] = portfolioData;
   public PortfolioData2:{image:string,title:string,amount:string, percent:string}[] = portfolioNewData;
 
-   dropdownList: any =[
-     "Bucket 1", "Bucket 2" ,"Bucket 3","Bucket 4"
+  //  dropdownList: any =[
+  //    "Bucket 1", "Bucket 2" ,"Bucket 3","Bucket 4"
+  //  ]
+   dropdownList2: any=[
+     "January'21", "Febuary' 21" ,"March' 21 ","April' 21"
    ]
-   dropdownList2=[
-    "January'21", "Febuary' 21" ,"March' 21 ","April' 21"
-  ]
+
+  Dropdownlist = DROPDOWNLIST;
+  selectedDropdown?: Dropdown;
+
   constructor() { }
  
 
@@ -26,21 +32,21 @@ export class PortfolioOverviewComponent implements OnInit {
 
   }
  
-  selectedValue: any;
+//  selectedValue: any;
  
-  onSelectList(event: any){
-  // this.selectedValue = event.trigger.item;
-  this.selectedValue =this.event.item;
-  console.log( this.selectedValue);
+//   onSelectList(event: any){
+//   this.selectedValue = event.trigger.item;
+//   console.log( this.selectedValue);
 
-  }
+//   }
 
+onSelectList(item: Dropdown):void{
+  this.selectedDropdown = item;
+}
   
 
   
 
 }
-function item(item: any): any {
-  throw new Error('Function not implemented.');
-}
+
 

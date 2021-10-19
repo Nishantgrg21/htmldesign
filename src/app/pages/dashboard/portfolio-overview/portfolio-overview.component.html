@@ -15,16 +15,31 @@
         <!-- <div class="block-text" > By Account</div> -->
     </div>
     <div class="block2">
-        <div class=" btn-border dropdown" >
+        <!-- <div class=" btn-border dropdown" >
             <span >Bucket 1 </span> 
             <span class="material-icons rounded-icon" > expand_more </span>
             <ul class=" dropdown-content" >
-             <li class="dropdown-item"
-             *ngFor="let item of dropdownList" 
-              (click)="onSelectList($event)"
-             [value]="item">
+             <li 
+             class="dropdown-item"
+              (click)="onSelectList(item )"
+              [value]="item"
+              *ngFor="let item of dropdownList" >
                  {{item}}
-                </li>
+             </li>
+           </ul>
+        </div> -->
+        <div class=" btn-border dropdown" >
+            <span *ngIf="selectedDropdown">  {{selectedDropdown.name}} </span> 
+            <span class="material-icons rounded-icon" > expand_more </span>
+            <ul class=" dropdown-content">
+             <li 
+             class="dropdown-item"
+             *ngFor="let item of Dropdownlist"
+             [class.selected]="item === selectedDropdown"
+              (click)="onSelectList(item)"
+               >
+                 {{item.name}}
+             </li>
            </ul>
         </div>
 
