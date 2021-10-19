@@ -15,33 +15,30 @@
         <!-- <div class="block-text" > By Account</div> -->
     </div>
     <div class="block2">
-        <div class=" btn-border dropdown ">
-            <span id="drpBtnChange" > Bucket 1</span> 
-                <select class=" dropdown-content" id="name" >
-             <option class="dropdown-item" value="Bucket1">Bucket 1</option>
-             <option class="dropdown-item" value="Bucket2" >Bucket 2 </option>
-             <option class="dropdown-item" value="Bucket3" >Bucket 3 </option>
-             <option class="dropdown-item" value="Bucket4" >Bucket 4 </option>
-             <option class="dropdown-item" value="Bucket5" >Bucket 5 </option>
-             <option class="dropdown-item" value="Bucket6" >Bucket 6 </option>
-             <option class="dropdown-item" value="Bucket7" >Bucket 7 </option>
-             <option class="dropdown-item" style="border-bottom: none" value="Bucket8" >Bucket 8 </option>
-           </select>
-
+        <div class=" btn-border dropdown" >
+            <span >Bucket 1 </span> 
+            <span class="material-icons rounded-icon" > expand_more </span>
+            <ul class=" dropdown-content" >
+             <li class="dropdown-item"
+             *ngFor="let item of dropdownList" 
+              (click)="onSelectList($event)"
+             [value]="item">
+                 {{item}}
+                </li>
+           </ul>
         </div>
 
-        <div class="btn-border dropdown">
-            <span class="dropdown-text" id="drpBtn2Change">January' 21</span>
-                <span class="material-icons rounded-icon"> expand_more </span>
-                <select class="dropdown-content" id="valuechange">
-                    <option class="dropdown-item"  value="January21">January' 21</option>
-                    <option class="dropdown-item"  value="Febuary21"> Febuary' 21 </option>
-                    <option class="dropdown-item"  value="March21">March' 21 </option>
-                    <option class="dropdown-item"  value="April21">April' 21 </option>
-                    <option class="dropdown-item"  value="May21 ">May' 21 </option>
-                    <option class="dropdown-item"  style="border-bottom: none"  value="June21">June' 21 </option>
-                  </select>
-            </div>
+        <div class=" btn-border dropdown">
+            <span id="drpBtnChange" >March'21</span> 
+            <span class="material-icons rounded-icon "> expand_more </span>
+            <ul class=" dropdown-content">
+             <li class="dropdown-item" *ngFor="let list2 of dropdownList2" [value]="list2">
+                 {{list2}}
+                </li>
+           </ul>
+        </div>
+
+        
            
     </div>
 
