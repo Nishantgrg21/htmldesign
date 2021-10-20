@@ -32,20 +32,16 @@
         </div> -->
 
 
-<div class="btnBorder" (mouseenter)="dropdownContent=false" (mouseleave)="dropdownContent=true" >
-    text
+<div class="btnBorder" (mouseenter)="dropdownContent=false" (mouseleave)="dropdownContent=true"  >
+    {{SelectedValue}}
     <span class="material-icons rounded-icon"> expand_more </span>
-    <ul class="dropdownContent" *ngIf="!dropdownContent">
-        <li class="dropdown-item" *ngFor="let list2 of dropdownList2" >
-            {{list2}}
+    <ul class="dropdownContent" *ngIf="!dropdownContent" (click)="dropdownContent = true"  >
+        <li class="dropdown-item" *ngFor="let item of dropdownList2" (click)="onChange(item)" [value]="item" >
+            {{item}}
         </li>
     </ul>
 </div>
-<!-- 
-        <div (mouseenter)="changeText=true" (mouseleave)="changeText=false">
-            <span *ngIf="!changeText">Hide</span>
-            <span *ngIf="changeText">Show</span>
-          </div> -->
+
 
         
            

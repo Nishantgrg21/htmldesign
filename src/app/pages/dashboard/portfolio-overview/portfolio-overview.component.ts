@@ -28,16 +28,34 @@ export class PortfolioOverviewComponent implements OnInit {
 
 
  
-   constructor() {
-     
-   }
+   constructor() { }
+
    dropdownContent:  any;
+ 
   ngOnInit(): void {
     this.dropdownContent = true;
+    
   }
+
+  
+  SelectedValue = "March' 21";
+  onChange(item:any){
+    this.SelectedValue =  item;
+  
+
+  }
+
+
+// SelectedData:any;
+//      onChange(event:any){
+//    this.SelectedData = event.target.value;
+//    console.log( this.SelectedData);
+//    console.log(event);
+//   }
 
  
 
+  
 
 
 
