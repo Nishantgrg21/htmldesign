@@ -18,31 +18,34 @@ export class PortfolioOverviewComponent implements OnInit {
   //  dropdownList: any =[
   //    "Bucket 1", "Bucket 2" ,"Bucket 3","Bucket 4"
   //  ]
-   dropdownList2: any=[
+
+  public events: string[] = [];
+
+  public dropdownList2: Array<string>=[
      "January'21", "Febuary' 21" ,"March' 21 ","April' 21"
-   ]
+   ];
 
-  Dropdownlist = DROPDOWNLIST;
-  selectedDropdown?: Dropdown;
 
-  constructor() { }
+
  
-
+   constructor() {
+     
+   }
+   dropdownContent:  any;
   ngOnInit(): void {
-
+    this.dropdownContent = true;
   }
- 
-//  selectedValue: any;
- 
-//   onSelectList(event: any){
-//   this.selectedValue = event.trigger.item;
-//   console.log( this.selectedValue);
 
-//   }
+ 
 
-onSelectList(item: Dropdown):void{
-  this.selectedDropdown = item;
-}
+
+
+
+//   Dropdownlist = DROPDOWNLIST;
+//   selectedDropdown?: Dropdown;
+// onSelectList(item: Dropdown):void{
+//   this.selectedDropdown = item;
+// }
   
 
   

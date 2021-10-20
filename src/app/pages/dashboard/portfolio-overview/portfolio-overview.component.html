@@ -15,20 +15,8 @@
         <!-- <div class="block-text" > By Account</div> -->
     </div>
     <div class="block2">
+        
         <!-- <div class=" btn-border dropdown" >
-            <span >Bucket 1 </span> 
-            <span class="material-icons rounded-icon" > expand_more </span>
-            <ul class=" dropdown-content" >
-             <li 
-             class="dropdown-item"
-              (click)="onSelectList(item )"
-              [value]="item"
-              *ngFor="let item of dropdownList" >
-                 {{item}}
-             </li>
-           </ul>
-        </div> -->
-        <div class=" btn-border dropdown" >
             <span *ngIf="selectedDropdown">  {{selectedDropdown.name}} </span> 
             <span class="material-icons rounded-icon" > expand_more </span>
             <ul class=" dropdown-content">
@@ -41,17 +29,23 @@
                  {{item.name}}
              </li>
            </ul>
-        </div>
+        </div> -->
 
-        <div class=" btn-border dropdown">
-            <span id="drpBtnChange" >March'21</span> 
-            <span class="material-icons rounded-icon "> expand_more </span>
-            <ul class=" dropdown-content">
-             <li class="dropdown-item" *ngFor="let list2 of dropdownList2" [value]="list2">
-                 {{list2}}
-                </li>
-           </ul>
-        </div>
+
+<div class="btnBorder" (mouseenter)="dropdownContent=false" (mouseleave)="dropdownContent=true" >
+    text
+    <span class="material-icons rounded-icon"> expand_more </span>
+    <ul class="dropdownContent" *ngIf="!dropdownContent">
+        <li class="dropdown-item" *ngFor="let list2 of dropdownList2" >
+            {{list2}}
+        </li>
+    </ul>
+</div>
+<!-- 
+        <div (mouseenter)="changeText=true" (mouseleave)="changeText=false">
+            <span *ngIf="!changeText">Hide</span>
+            <span *ngIf="changeText">Show</span>
+          </div> -->
 
         
            
