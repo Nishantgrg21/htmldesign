@@ -15,9 +15,9 @@ export class PortfolioOverviewComponent implements OnInit {
   public PortfolioData1:{image:string,title:string,amount:string, percent:string}[] = portfolioData;
   public PortfolioData2:{image:string,title:string,amount:string, percent:string}[] = portfolioNewData;
 
-  //  dropdownList: any =[
-  //    "Bucket 1", "Bucket 2" ,"Bucket 3","Bucket 4"
-  //  ]
+   dropdownList1: any =[
+     "Bucket 1", "Bucket 2" ,"Bucket 3","Bucket 4"
+   ]
 
   public events: string[] = [];
 
@@ -33,12 +33,20 @@ export class PortfolioOverviewComponent implements OnInit {
    }
 
    dropdownContent:  any;
- 
+   dropdownContent1:any;
   ngOnInit(): void {
+    this.dropdownContent1 = true;
     this.dropdownContent = true;
   }
 
  
+  SelectedValue1:any ="Bucket 3";
+  onChange1(item1:any){
+    this.SelectedValue1 = item1;
+  console.log(this.SelectedValue1);
+
+  }
+
   SelectedValue:any ="March' 21";
   onChange(item:any){
     this.SelectedValue = item;
@@ -47,24 +55,8 @@ export class PortfolioOverviewComponent implements OnInit {
   }
 
 
-// SelectedData:any;
-//      onChange(event:any){
-//    this.SelectedData = event.target.value;
-//    console.log( this.SelectedData);
-//    console.log(event);
-//   }
-
- 
-
-  
 
 
-
-//   Dropdownlist = DROPDOWNLIST;
-//   selectedDropdown?: Dropdown;
-// onSelectList(item: Dropdown):void{
-//   this.selectedDropdown = item;
-// }
   
 
   
