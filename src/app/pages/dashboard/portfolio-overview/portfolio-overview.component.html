@@ -32,11 +32,11 @@
         </div> -->
 
 
-<div class="btnBorder" (mouseenter)="dropdownContent=false" (mouseleave)="dropdownContent=true"  >
+<div class="btnBorder" (mouseenter)="dropdownContent=false" (mouseleave)="dropdownContent=true">
     {{SelectedValue}}
     <span class="material-icons rounded-icon"> expand_more </span>
     <ul class="dropdownContent" *ngIf="!dropdownContent" (click)="dropdownContent = true"  >
-        <li class="dropdown-item" *ngFor="let item of dropdownList2" (click)="onChange(item)" [value]="item" >
+        <li class="dropdown-item" *ngFor="let item of dropdownList2"  (click)="onChange(item)"  [value]="item" [class.dropdown-item-bg]="item==SelectedValue">
             {{item}}
         </li>
     </ul>
