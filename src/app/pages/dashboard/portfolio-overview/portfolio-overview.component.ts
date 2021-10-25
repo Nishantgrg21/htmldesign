@@ -68,14 +68,20 @@ export class PortfolioOverviewComponent implements OnInit {
     this.isShow2 = true;
     this.isShow1 =false;
   }
-  allClassChanges = {
+  allClassChanges1 = {
     tog1:true,
-    faSize2:false,    faSize:true,
-    account:true
+    
+  }
+  allClassChanges2={
+    tog2:false,
+    amount:true
   }
   allSizeChanges ={
-    faSize2:true,
-    faSize:false,  
+    faSize1:true
+    
+  }
+  inrChanges={
+    inrSize:false,
   }
  
   

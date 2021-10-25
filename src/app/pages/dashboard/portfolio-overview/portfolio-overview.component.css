@@ -36,41 +36,23 @@
 
 
 
- /* .account{
-
-    text-align: center;
-    color: #fff;
-    background: #292929;
-    cursor: pointer;
-    
-} 
-
-.tog1{
-  background: linear-gradient(rgb(223, 143, 1) 0%, rgb(169, 92, 6) 100%) 0% 0%;
-  box-shadow: rgb(0 0 0) 0px 3px 6px;
-  color: rgb(41, 41, 41);
-    width: 40px;
-    height: 40px;
-  border-radius: 50%;
-
-}*/
-
-
-.faSize{
+.faSize1{
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 600;
 } 
 .faSize2{
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-size: 2.5rem;
+ 
+ 
 } 
+
 .account{
   /* width: 30px; */
    text-align: center;
    border-radius: 50%;
-   font-size: 19px;
+   font-size: 26px;
    color: #fff;
-   
+   line-height: 1.5;
    background: #292929;
    cursor: pointer;
  }  
@@ -80,7 +62,6 @@
   color: rgb(41, 41, 41);
   border: 1px solid;
     border-radius: 50%;
-    font-size: 28px;
     width: 40px;
 }
 .rupees{
@@ -92,6 +73,7 @@
    border: 1px solid #fff;
    background: #292929;
    cursor: pointer;
+   line-height: 1.5;
  }  
 .tog2{
   background: linear-gradient(rgb(223, 143, 1) 0%, rgb(169, 92, 6) 100%) 0% 0% ;
@@ -99,8 +81,14 @@
   color: rgb(41, 41, 41);
   border: 1px solid;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 25px;
+    line-height: 1.5;
     width: 40px;
+}
+
+
+.inrSize{
+  font-size: 18px;
 }
 /* 
 .rupees:hover {

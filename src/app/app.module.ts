@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout/layout.module';
 import { SharedModule } from './shared/shared.module';
+// import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    LayoutModule
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

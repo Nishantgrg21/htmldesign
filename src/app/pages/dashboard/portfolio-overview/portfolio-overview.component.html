@@ -3,13 +3,13 @@
 </div>
 <div class="block">
     <div class="block1">
-        <div class="account"  (click)= toggleDisplay1() (click)="accountToAmount = 'By Account'"  [ngClass]="allClassChanges" [class.tog1]="isShow1">
-            <!-- <div  (click)= toggleDisplay1() (click)="accountToAmount = 'By Account'" [ngClass]=" ' account tog1'"> -->
+        <div class="account"  (click)= toggleDisplay1() (click)="accountToAmount = 'By Account'"  [ngClass]="allClassChanges1" [class.tog1]="isShow1">
             <i class="fa fa-user-circle" [ngClass]="allSizeChanges"></i>
         </div>
         <div class="hr-line"> </div>
-        <div class="rupees" (click)= toggleDisplay2() (click)="accountToAmount = 'By Amount'"  [class.tog2]="isShow2">
-            <i class="fa fa-inr"></i>
+        <div class="rupees" (click)= toggleDisplay2() (click)="accountToAmount = 'By Amount'" [ngClass]="allClassChanges2" [class.tog2]="isShow2">
+            <!-- <i class="fas fa-rupee-sign" ></i> -->
+            <span class="inr-icon" [ngClass]="inrChanges"> ₹</span>
         </div>
         <div class="vr-line"> </div>
         <div class="block-text" > {{accountToAmount}}</div>
