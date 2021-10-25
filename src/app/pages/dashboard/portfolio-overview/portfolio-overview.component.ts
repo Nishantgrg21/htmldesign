@@ -55,10 +55,30 @@ export class PortfolioOverviewComponent implements OnInit {
   }
 
 
+  accountToAmount:any ="By Account";
+  public isShow1 :boolean= true;
+  public isShow2 :boolean= false;
 
+  toggleDisplay1() {
+    this.isShow1 = true;
+    this.isShow2 = false;
+  }
 
+  toggleDisplay2() {
+    this.isShow2 = true;
+    this.isShow1 =false;
+  }
+  allClassChanges = {
+    tog1:true,
+    faSize2:false,    faSize:true,
+    account:true
+  }
+  allSizeChanges ={
+    faSize2:true,
+    faSize:false,  
+  }
+ 
   
-
   
 
 }

@@ -3,35 +3,21 @@
 </div>
 <div class="block">
     <div class="block1">
-        <div class="account active-btn" id="acc-size">
-            <i class="fa fa-user-circle acc-size" onclick="show1()"></i>
+        <div class="account"  (click)= toggleDisplay1() (click)="accountToAmount = 'By Account'"  [ngClass]="allClassChanges" [class.tog1]="isShow1">
+            <!-- <div  (click)= toggleDisplay1() (click)="accountToAmount = 'By Account'" [ngClass]=" ' account tog1'"> -->
+            <i class="fa fa-user-circle" [ngClass]="allSizeChanges"></i>
         </div>
         <div class="hr-line"> </div>
-        <div class="rupees" id="rup-size">
-            <i class="fa fa-inr" aria-hidden="true"  onclick="show2()"></i>
+        <div class="rupees" (click)= toggleDisplay2() (click)="accountToAmount = 'By Amount'"  [class.tog2]="isShow2">
+            <i class="fa fa-inr"></i>
         </div>
         <div class="vr-line"> </div>
-        <div class="block-text" id="content-change"> By Account</div>
-        <!-- <div class="block-text" > By Account</div> -->
+        <div class="block-text" > {{accountToAmount}}</div>
     </div>
+
+
     <div class="block2">
         
-        <!-- <div class=" btn-border dropdown" >
-            <span *ngIf="selectedDropdown">  {{selectedDropdown.name}} </span> 
-            <span class="material-icons rounded-icon" > expand_more </span>
-            <ul class=" dropdown-content">
-             <li 
-             class="dropdown-item"
-             *ngFor="let item of Dropdownlist"
-             [class.selected]="item === selectedDropdown"
-              (click)="onSelectList(item)"
-               >
-                 {{item.name}}
-             </li>
-           </ul>
-        </div> -->
-
-
         <div class="btnBorder" (mouseenter)="dropdownContent1=false" (mouseleave)="dropdownContent1=true">
             {{SelectedValue1}}
             <span class="material-icons rounded-icon"> expand_more </span>
@@ -62,15 +48,15 @@
 
 
 <!--5 Column Content Start-->
-<div class="block Bucket1 details" id="div1" >
-    <div class="dashboard-block b-bdr"  *ngFor=" let Pdata of PortfolioData1">
+<div class="block Bucket1 details" *ngIf="accountToAmount === 'By Account'">
+    <div class="dashboard-block b-bdr"  *ngFor=" let Pdata of PortfolioData1" value="Pdata">
         <div class="dashboard-box" >
             <div class="dashboard-icon">
                 <img src={{Pdata.image}} class="img-width">
             </div>
             <div class="dashboard-text">
                 <div class="dashboard-text-1">
-                    <span>{{Pdata.title}}</span>
+                    <span >{{Pdata.title}}</span>
                     <span>
                         <img src="assets/images/info-d.png" alt="icon" class="dashboard-text-1-icon">
                     </span>
@@ -87,7 +73,7 @@
 </div>
 <!--5 Column Content End-->
 <!--5 Column Content Start-->
-<div class="block Bucket2 details" id="div2" >
+<div class="block Bucket2 details"  *ngIf="accountToAmount === 'By Amount'" >
     <div class="dashboard-block b-bdr" *ngFor=" let PNewdata of PortfolioData2">
         <div class="dashboard-box">
             <div class="dashboard-icon">
