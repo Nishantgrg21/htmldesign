@@ -1,1 +1,32 @@
-<p>home works!</p>
+
+<div class="main-block">
+   
+    <table class="table-border">
+        <thead >
+            <th>id</th>
+            <th>email</th>
+            <th>first_name</th>
+            <th>last_name</th>
+            <th>avatar</th>
+        </thead>
+        <tbody *ngFor="let userprofile of users">
+            <td>
+                {{userprofile.id}} 
+            </td>
+            <td>
+                {{userprofile.email}} 
+            </td>
+            <td>
+                {{userprofile.first_name}} 
+            </td>
+            <td>
+                {{userprofile.last_name}} 
+            </td>
+            <td>
+                
+                <img src={{userprofile.avatar}}  />
+            </td>
+            
+        </tbody>
+    </table>
+</div>

@@ -70,14 +70,14 @@ export class PortfolioOverviewComponent implements OnInit {
   }
   allClassChanges1 = {
     tog1:true,
-    
+   
   }
   allClassChanges2={
     tog2:false,
     amount:true
   }
   allSizeChanges ={
-    faSize1:true
+    faSize2:false
     
   }
   inrChanges={

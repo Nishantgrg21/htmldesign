@@ -1,4 +1,9 @@
+
 import { Component, OnInit } from '@angular/core';
+import  {ApiService  } from './api.service';
+import { Users } from './users';
+
+
 
 @Component({
   selector: 'app-home',
@@ -6,10 +11,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+ 
 
-  constructor() { }
+  constructor( private ApiServiceData :ApiService) { }
+
+
+
+  users! : Users[];
+
 
   ngOnInit(): void {
+    this.ApiServiceData.getRequest().subscribe(
+      (res:any) => {
+        this.users = res.data;
+        console.log(res);
+      }) 
   }
 
+
+
 }
+
+

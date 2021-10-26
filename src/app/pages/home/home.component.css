@@ -1,0 +1,12 @@
+.main-block{
+    padding:25px;
+    color:#fff
+}
+.table-border , th, td, tr{
+    border:1px solid #fff;
+    padding:7px;
+    border-collapse: collapse;
+}
+thead{
+    background: #181818;
+}
