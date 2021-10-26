@@ -1,4 +1,4 @@
-.main-block{
+.main-block ,.popup{
     padding:25px;
     color:#fff
 }
@@ -9,4 +9,10 @@
 }
 thead{
     background: #181818;
+}
+
+.popup{
+    border:1px solid #fff;
+    padding:7px;
+
 }
