@@ -1,4 +1,7 @@
 
+
+
+
 <div class="main-block" >
    
     <table class="table-border">
@@ -24,21 +27,24 @@
                 {{userprofile.last_name}} 
             </td>
             <td>
-                <img src={{userprofile.avatar}} (click)="openModal()" />
-                
+                <img src={{userprofile.avatar}} (click)="openModal()"  (click)="onChangeValue(userprofile)" />
+                <div class="popup" [ngStyle]="{'display':display}" *ngIf="userprofile == SelectedValue" >
+                    
+                    <p> Id :  {{SelectedValue.id}} </p>
+                    <p> Email : {{SelectedValue.email}} </p>
+                    <p> First Name : {{SelectedValue.first_name}}  </p>
+                    <p> LastName :   {{SelectedValue.last_name}} </p>
+                    <p><span class="right"  (click)="closeModal()" >X</span></p>
+                  </div>
             </td>
-            <div class="popup"  [ngStyle]="{'display':display}" >
-             <p> Id :  {{ userprofile.id}}</p>
-             <p> Email : {{userprofile.email}} </p>
-             <p> First Name :  {{userprofile.first_name}} </p>
-             <p> LastName : {{userprofile.last_name}} </p>
-             <p><button type="button" class="btn btn-default" (click)="closeModal()" >Close</button></p>
-           </div>
+           
             
         </tbody>
         
     </table>
    
+   
+
 </div>
 
 

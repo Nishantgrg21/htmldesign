@@ -10,9 +10,16 @@
 thead{
     background: #181818;
 }
+.right{
+    float: right;
+}
 
 .popup{
-    border:1px solid #fff;
-    padding:7px;
-
+    border:1px solid #181818;
+    padding:10px;
+    background: #181818 ;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: -125px;
+    margin-left: 150px;
 }

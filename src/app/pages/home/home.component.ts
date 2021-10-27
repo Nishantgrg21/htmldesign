@@ -15,26 +15,17 @@ export class HomeComponent implements OnInit {
 
   constructor( private ApiServiceData :ApiService) { }
 
-
-
   users! : Users[];
-
-  SingleContent:any;
+  
   ngOnInit(): void {
     this.ApiServiceData.getRequest().subscribe(
       (res:any) => {
         this.users = res.data;
         console.log(res);
       }) 
-  this.SingleContent=true
   }
 
-  // SelectedValue :any='userprofile';
-  // onChangeValue(userprofile:any){
-  //   this.SelectedValue = userprofile;
-  //   console.log('SelectedValue');
-  // }
-
+//Onclick div Hide and show Start
   display = "none";
   openModal() {
     this.display = "block";
@@ -42,6 +33,15 @@ export class HomeComponent implements OnInit {
   closeModal() {
     this.display = "none";
   }
+  //Onclick Single Data div Hide and show End
+
+  SelectedValue :any='userprofile';
+  onChangeValue(userprofile:any){
+    this.SelectedValue = userprofile;
+    console.log('SelectedValue');
+  }
+
+  
 
 }
 

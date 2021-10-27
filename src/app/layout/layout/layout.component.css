@@ -10,7 +10,7 @@
     float: right;
     width: calc(100% - 75px);
     min-height: 100vh;
-    background: red;
+    background: #292929;
  }
  .header{
     min-height: 70px;
