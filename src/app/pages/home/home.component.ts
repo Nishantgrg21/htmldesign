@@ -1,7 +1,5 @@
 
-import { Component, OnInit } from '@angular/core';
-import  {ApiService  } from './api.service';
-import { Users } from './users';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 
@@ -11,35 +9,14 @@ import { Users } from './users';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
- 
-
-  constructor( private ApiServiceData :ApiService) { }
-
-  users! : Users[];
+  constructor() { }
+  // data="Hello";
   
   ngOnInit(): void {
-    this.ApiServiceData.getRequest().subscribe(
-      (res:any) => {
-        this.users = res.data;
-        console.log(res);
-      }) 
+
   }
 
-//Onclick div Hide and show Start
-  display = "none";
-  openModal() {
-    this.display = "block";
-  }
-  closeModal() {
-    this.display = "none";
-  }
-  //Onclick Single Data div Hide and show End
-
-  SelectedValue :any='userprofile';
-  onChangeValue(userprofile:any){
-    this.SelectedValue = userprofile;
-    console.log('SelectedValue');
-  }
+  
 
   
 

@@ -1,3 +1,17 @@
+/* .table{
+    width: 100%;
+} */
+p{
+    color: #fff;
+}
+.table-border , th, td, tr{
+    border:1px solid #fff;
+    padding:7px;
+    border-collapse: collapse;width: 100%;
+}
+thead{
+    background: #181818;
+}
 .main-block ,.popup{
     padding:25px;
     color:#fff;
@@ -18,14 +32,4 @@
 
 .right{
     float: right;
-}
-
-.popup{
-    border:1px solid #181818;
-    padding:10px;
-    background: #181818 ;
-    border-radius: 10px;
-    position: absolute;
-    margin-top: -125px;
-    margin-left: 150px;
 }

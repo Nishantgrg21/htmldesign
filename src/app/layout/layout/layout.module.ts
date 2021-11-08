@@ -14,6 +14,8 @@ import { StatewisePerformanceComponent } from 'src/app/pages/dashboard/statewise
 import { PortfolioComponent } from 'src/app/pages/dashboard/portfolio/portfolio.component';
 import { ResolutionTrendsComponent } from 'src/app/pages/dashboard/resolution-trends/resolution-trends.component';
 import { PortfolioOverviewComponent } from 'src/app/pages/dashboard/portfolio-overview/portfolio-overview.component';
+import { ChildComponent } from 'src/app/pages/home/child/child.component';
+import { ParentComponent } from 'src/app/pages/home/parent/parent.component';
 
 
 
@@ -31,7 +33,8 @@ import { PortfolioOverviewComponent } from 'src/app/pages/dashboard/portfolio-ov
     PortfolioComponent,
     ResolutionTrendsComponent,
     PortfolioOverviewComponent,
-   
+    ChildComponent,
+    ParentComponent
   ],
   imports: [
     RouterModule,
