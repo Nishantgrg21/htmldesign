@@ -28,7 +28,7 @@ export class ParentComponent implements OnInit {
   onChangeValue(userprofile:any){
      console.log('SelectedValue');
       this.SelectedValue = "id :" + userprofile.id + "<br/>" + "Email:" +  userprofile.email +  '<br/>'
-       + "First Name:" + userprofile.first_name+'<br/>' + "Last Name:" +  userprofile.last_name +  "<img src="+userprofile.avatar+" />";
+       + "First Name:" + userprofile.first_name+'<br/>' + "Last Name:" +  userprofile.last_name +"<br/>" +  "<img src="+userprofile.avatar+" />";
        this.data= this.SelectedValue; 
   }
 
