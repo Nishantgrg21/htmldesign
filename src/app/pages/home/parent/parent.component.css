@@ -1,6 +1,4 @@
-/* .table{
-    width: 100%;
-} */
+
 p{
     color: #fff;
 }
@@ -12,24 +10,18 @@ p{
 thead{
     background: #181818;
 }
-.main-block ,.popup{
+.main-block {
     padding:25px;
     color:#fff;
     /* width: 100%; */
 }
 .parent-block{
     width:50%;
+    margin: 20px 0px;
     float: left;
 }
 .child-block{
     width:50%;
-    float: right;
-}
-
-
-
-
-
-.right{
+    margin: 20px 0px;
     float: right;
 }

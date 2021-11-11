@@ -1,41 +1,14 @@
-<!-- <div class="main-block" >
-    <table class="table-border">
-        <thead >
-            <th>id</th>
-            <th>email</th>
-            <th>first_name</th>
-            <th>last_name</th>
-            <th>avatar</th>
-        </thead>
-        <tbody *ngFor="let userprofile of users"  >
-            <td>
-                {{userprofile.id}} 
-            </td>
-            <td>
-                {{userprofile.email}} 
-            </td>
-            <td>
-                {{userprofile.first_name}} 
-            </td>
-            <td>
-                {{userprofile.last_name}} 
-            </td>
-            <td>
-                <img src={{userprofile.avatar}} (click)="openModal()"  (click)="onChangeValue(userprofile)" />
-                <div class="popup" [ngStyle]="{'display':display}" *ngIf="userprofile == SelectedValue" >
-                    <p> Id :  {{SelectedValue.id}} </p>
-                    <p> Email : {{SelectedValue.email}} </p>
-                    <p> First Name : {{SelectedValue.first_name}} </p>
-                    <p> LastName :   {{SelectedValue.last_name}} </p>
-                    <p><span class="right"  (click)="closeModal()" >X</span></p> 
-                  </div>
-            </td>
-        </tbody>
-    </table>
-</div> -->
+<div class="main-block" >
+    <div class="parent-block">
+        <app-parent></app-parent>
+    </div>
+    <div class="child-block"  >
+        <app-child></app-child>
+    </div>
+</div>
 
 
-<app-parent></app-parent>
+
 
 
 

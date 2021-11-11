@@ -1,24 +1,25 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Users } from './users';
-import { from, Observable, throwError } from 'rxjs';
-import { map, catchError  } from 'rxjs/operators';
-
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 
-
 export class ApiService {
 
-constructor(private http: HttpClient) { }
+  private messageSource = new BehaviorSubject('Change Message');
+  currentMessage = this.messageSource.asObservable();
+  constructor(private http: HttpClient) { }
 
- public url = "https://reqres.in/api/users";
+  public url = "https://reqres.in/api/users";
 
-getRequest(){
+  getRequest() {
     return this.http.get(this.url);
-    
-}
+  }
+
+  changeMessage(message: string) {
+    this.messageSource.next(message)
+  }
 
 }

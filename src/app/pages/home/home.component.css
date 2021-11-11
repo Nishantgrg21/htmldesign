@@ -1,31 +1,14 @@
-.main-block ,.popup{
-    padding:25px;
+.main-block{
+    padding:0px 25px;
     color:#fff;
-    /* width: 100%; */
 }
 .parent-block{
     width:50%;
+    margin: 20px 0px;
     float: left;
 }
 .child-block{
     width:50%;
+    margin: 20px 0px;
     float: right;
-}
-
-
-
-
-
-.right{
-    float: right;
-}
-
-.popup{
-    border:1px solid #181818;
-    padding:10px;
-    background: #181818 ;
-    border-radius: 10px;
-    position: absolute;
-    margin-top: -125px;
-    margin-left: 150px;
 }

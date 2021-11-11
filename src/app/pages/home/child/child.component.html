@@ -1,5 +1,9 @@
-    <div class="container">
-        <p>child works!</p>
-        <!-- <p>{{item}}</p> -->
-        <div [innerHTML]="item"></div>
-    </div>
+<div class="container">
+    <p>Click on Image values Fetch From Parent to Child Component</p>
+    <br>
+    <p>{{SelectedValue.id}}</p>
+    <p>{{SelectedValue.email}}</p>
+    <p> {{SelectedValue.first_name}}</p>
+    <p>{{SelectedValue.last_name}}</p>
+    <p><img src={{SelectedValue.avatar}} /></p>
+</div>

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-child',
@@ -6,14 +7,15 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
- 
- 
 
-  @Input() item = 'This is child component';
 
-  constructor() { }
+  result!: any;
+  SelectedValue: any = [];
 
-  ngOnInit(): void {
+  constructor(private ApiServiceData: ApiService) { }
+
+  ngOnInit() {
+    this.result = this.ApiServiceData.currentMessage.subscribe(value => this.SelectedValue = value)
   }
 
 

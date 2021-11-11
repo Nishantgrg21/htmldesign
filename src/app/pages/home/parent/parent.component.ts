@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import  {ApiService  } from '../api.service';
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 import { Users } from '../users';
 
 @Component({
@@ -8,29 +8,35 @@ import { Users } from '../users';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
-  
 
-  
-  constructor(private ApiServiceData :ApiService) { }
-   users! : Users[];
- 
-  ngOnInit(): void {
+  constructor(private ApiServiceData: ApiService) { }
+  users!: Users[];
+  ngOnInit() {
     this.ApiServiceData.getRequest().subscribe(
-      (res:any) => {
+      (res: any) => {
         this.users = res.data;
         console.log(res);
-      }) 
+      })
   }
 
- SelectedValue :any="[]";
-  data:any=[];
 
-  onChangeValue(userprofile:any){
-     console.log('SelectedValue');
-      this.SelectedValue = "id :" + userprofile.id + "<br/>" + "Email:" +  userprofile.email +  '<br/>'
-       + "First Name:" + userprofile.first_name+'<br/>' + "Last Name:" +  userprofile.last_name +"<br/>" +  "<img src="+userprofile.avatar+" />";
-       this.data= this.SelectedValue; 
+  id = "";
+  email = " ";
+  first_name = "";
+  last_name = "";
+  avatar = "";
+  usersList: any = [];
+
+  SelectedValue: any = [];
+  OnChangeValue(userprofile: any) {
+    this.usersList.id = userprofile.id;
+    this.usersList.email = userprofile.email;
+    this.usersList.first_name = userprofile.first_name;
+    this.usersList.last_name = userprofile.last_name;
+    this.usersList.avatar = userprofile.avatar;
+    this.SelectedValue = this.usersList;
+    console.log(this.SelectedValue);
+    this.ApiServiceData.changeMessage(this.SelectedValue)
   }
-
 
 }
